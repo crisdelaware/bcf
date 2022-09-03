@@ -1,0 +1,8 @@
+{
+  "name": "BCF",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "207be51e"
+}

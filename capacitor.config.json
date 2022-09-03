@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "BCF",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
