@@ -1,0 +1,40 @@
+<body>
+  <img src="../../../assets/salud.png" alt="">  
+  <h1>Proceed with your</h1>
+  <h1><strong>Login</strong></h1>
+  <br>
+  <br>
+  <br>
+  
+<form [formGroup]="miFormulario" (ngSubmit)="login()">
+  <ion-card>
+    <ion-card-content>
+
+      <div>
+        <ion-card-title>email</ion-card-title>
+        <ion-card-subtitle>
+          <ion-input type="email" formControlName="email"  placeholder="Ingrese su email"></ion-input>
+        </ion-card-subtitle>
+      </div>
+
+      <div>
+        <ion-card-title>Password</ion-card-title>
+        <ion-card-subtitle>
+          <ion-input type="password" formControlName="password" placeholder="Ingrese su password"></ion-input>
+        </ion-card-subtitle>
+      </div>
+      <div>
+        <ion-button type="submit" class="btn_login">Login</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div class="alert alert-danger" role="alert" *ngIf="hayError" style="text-align: center;">
+    {{ hayError }}
+  </div>
+</form>
+  <div class="hiper">
+    <a routerLink="sign_in">Crear nueva cuenta</a>
+  </div>
+</body>
+
+

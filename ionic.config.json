@@ -1,7 +1,15 @@
 {
   "name": "BCF",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "enterprise": {
+      "keyId": 8865,
+      "productKey": "key_5a9bf3b830ce4a8e9d7873b9c2c804ec",
+      "appId": "207be51e",
+      "registries": [
+        "@ionic-enterprise;https://registry.ionicframework.com/"
+      ]
+    }
   },
   "type": "angular",
   "id": "207be51e"

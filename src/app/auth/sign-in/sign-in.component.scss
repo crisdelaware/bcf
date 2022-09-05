@@ -1,0 +1,39 @@
+
+img {
+    max-width: 50%;
+    height: 150px;
+    padding: 1rem;
+    filter: drop-shadow(3px 4px 4px #444);
+    margin-bottom: 2rem;
+}
+
+body {
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 700;
+    margin-top: 0rem;
+}
+
+div {
+    margin-top: 1rem;
+}
+
+ion-button.btn_login {
+    float: right;
+    margin: 1rem;
+}
+
+ion-card {
+    filter: drop-shadow(3px 4px 4px #444);
+}
+
+div.hiper {
+    margin-top: 2rem;
+    text-align: center;
+}
