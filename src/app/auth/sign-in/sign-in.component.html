@@ -1,0 +1,35 @@
+<body>
+  <img src="../../../assets/salud.png" alt="">  
+  <h1>Proceed with your</h1>
+  <h1><strong>Sign In</strong></h1>
+  <br>
+  <br>
+  <br>
+<form [formGroup]="miFormulario" (ngSubmit)="save()">
+  <ion-card>
+    <ion-card-content>
+
+      <div>
+        <ion-card-title>email</ion-card-title>
+        <ion-card-subtitle>
+          <ion-input type="email" formControlName="email" placeholder="Ingrese su email"></ion-input>
+        </ion-card-subtitle>
+      </div>
+
+      <div>
+        <ion-card-title>Password</ion-card-title>
+        <ion-card-subtitle>
+          <ion-input type="password" formControlName="password" placeholder="Ingrese su password"></ion-input>
+        </ion-card-subtitle>
+      </div>
+      <div>
+        <ion-button type="submit" [disabled]="miFormulario.invalid" class="btn_login">Crear</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</form>
+  <div class="hiper">
+    <a routerLink="sign_in">¿Ya tienes una cuenta?</a>
+  </div>
+  <p>Form status: {{ miFormulario.status }}</p>
+</body>

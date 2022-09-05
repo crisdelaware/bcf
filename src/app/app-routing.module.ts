@@ -1,10 +1,26 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './auth/login/login.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+    component: LoginComponent,
+    pathMatch: 'full' 
+  },
+  {
+    path: 'sign_in',
+    component: SignInComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 @NgModule({
