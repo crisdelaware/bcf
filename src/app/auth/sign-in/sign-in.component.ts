@@ -23,7 +23,7 @@ export class SignInComponent  {
     this.authService.signupNewUser(this.miFormulario.value)
       .subscribe(resp => {
         console.log('Respuesta', resp)
-        this.router.navigateByUrl('dashboard')
+        this.router.navigateByUrl('login')
       });
       this.miFormulario.reset();
   }
