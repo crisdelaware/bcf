@@ -2,15 +2,12 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
 import { SignInComponent } from './auth/sign-in/sign-in.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: LoginComponent,
-    pathMatch: 'full' 
-  },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   {
     path: 'sign_in',
     component: SignInComponent
@@ -25,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: 'login'
   }
 ];
 @NgModule({

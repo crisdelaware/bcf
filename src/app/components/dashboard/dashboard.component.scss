@@ -1,0 +1,25 @@
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
+
+.lista ul{
+    list-style: none;
+
+}
+
+.lista .menu li:hover{
+    background: gray;
+}
+
+.lista .icon{
+    font-size: 20px;
+}
+
+.lista .menu .icon .left{
+    float: left;
+    margin-right: 10px;
+}
+
+.lista .menu .icon .right{
+    float: right;
+    margin-left: 10px;
+}
