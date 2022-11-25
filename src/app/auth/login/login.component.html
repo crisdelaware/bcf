@@ -2,10 +2,7 @@
   <img src="../../../assets/paneles.png" alt="">  
   <h1>Proceed with your</h1>
   <h1><strong>Login</strong></h1>
-  <br>
-  <br>
-  <br>
-  <br>
+
 <form [formGroup]="miFormulario" (ngSubmit)="login()">
   <ion-card>
     <ion-card-content>
@@ -33,7 +30,10 @@
   </div>
 </form>
   <div class="hiper">
-    <a routerLink="sign_in">Crear nueva cuenta</a>
+    <!-- <a routerLink="sign_in">Crear nueva cuenta</a> -->
+    <ion-button [routerLink]="['/sign_in']" shape="round" color="primary">
+      Crear cuenta
+    </ion-button>
   </div>
 </body>
 

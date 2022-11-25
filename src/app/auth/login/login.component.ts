@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.signInWithPassword(this.miFormulario.value)
       .subscribe(resp => {
-        this.router.navigate(['/dashboard'])
+        this.router.navigate(['/menu/dashboard'])
         // console.log('Respuesta', resp)
         // console.log(`Bienvenido ${this.miFormulario.value.email}`)
       }, ({ error  }: any) => {
