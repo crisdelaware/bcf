@@ -1,0 +1,128 @@
+<!-- <ion-card>
+  <ion-card-header>
+    <ion-card-title>Cotizar</ion-card-title>
+    <ion-card-subtitle>Todos los campos son obligatorios</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    
+  </ion-card-content>
+</ion-card> -->
+
+
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Cotizador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <img src="../../../assets/empresas.jpg" alt="">
+    <ion-card-title>Bienvenido</ion-card-title>
+    <ion-card-subtitle>Consulte su cotizacion</ion-card-subtitle>
+
+    <ion-card-content>
+      <ion-text color="primary">
+        <h1>Tipo de panel a instalar</h1>
+      </ion-text>
+      <ion-list>
+        <form [formGroup]="form" (ngSubmit)="cotizar()">
+        <ion-radio-group [allowEmptySelection]="true" formControlName="panel_type">
+          <ion-item>
+            <ion-label>Panel Domestico - 6,000.00</ion-label>
+            <ion-radio mode="md" slot="end" value="6000" ></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Panel Negocio - 24,000.00</ion-label>
+            <ion-radio mode="md" slot="end" value="24000" ></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Panel Empresa - 85,000.00</ion-label>
+            <ion-radio mode="md" slot="end" value="85000" ></ion-radio>
+          </ion-item>
+      </ion-radio-group>
+
+      <ion-card-content>
+      <ion-text color="primary">
+        <h1>Cantidad de paneles</h1>
+      </ion-text>
+      <br>
+      <ion-range formControlName="cantidad" [min]="1" [max]="20" [value]="1" [pin]="true" [ticks]="true" [snaps]="true"></ion-range>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-text color="primary">
+        <h1>Requiere Instalacion:</h1>
+        <ion-card-subtitle>Costo de instalacion 8,000.00</ion-card-subtitle>
+      </ion-text>
+
+      <ion-list>
+        <ion-radio-group formControlName="instalacion">
+          <ion-item>
+            <ion-label>Requiero la instalacion</ion-label>
+            <ion-radio mode="md" slot="end" value="8000" ></ion-radio>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>No requiero la instalacion</ion-label>
+            <ion-radio mode="md" slot="end" value="0" ></ion-radio>
+          </ion-item>
+      
+        </ion-radio-group>
+      </ion-list>
+      <ion-button type="submit" [disabled]="form.invalid" fill="outline">COTIZAR!</ion-button>
+    </ion-card-content>
+    </form>
+    <h1>Su cotizacion es por: ${{ costoTotal | number }}</h1>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+  
+
+
+  <!-- <form [formGroup]="form" (ngSubmit)="cotizar()"> -->
+    <!-- <label>
+      <input type="radio" value="5700" formControlName="panel_type">
+      <span>Panel Domestico</span>
+    </label>
+    <label>
+      <input type="radio" value="18700" formControlName="panel_type">
+      <span>Panel Negocio</span>
+    </label>
+    <label>
+      <input type="radio" value="50000" formControlName="panel_type">
+      <span>Panel Empresa</span>
+    </label> -->
+<!-- 
+    <label>
+      <input type="number" formControlName="cantidad">
+      <span>Cantidad de paneles</span>
+    </label>
+
+    <label>Requiere Instalacion - 5000</label>
+
+    <label>
+      <input type="radio" value="5000" formControlName="instalacion">
+      <span>Si</span>
+    </label>
+
+    <label>
+      <input type="radio" value="0" formControlName="instalacion">
+      <span>No</span>
+    </label>
+
+    <button type="submit">Cotizar</button> -->
+
+  <!-- </form> -->
+  <!-- <pre>{{ form.value | json }}</pre>
+  <pre>{{ form.valid }}</pre>
+  <pre>{{ costoTotal | json }}</pre> -->
+  <!-- <pre>{{ form.value.panel_type | json }}</pre> -->
+<!-- </ion-content> -->

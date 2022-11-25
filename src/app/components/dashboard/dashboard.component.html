@@ -1,0 +1,70 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-slides>
+      <swiper [autoplay]="true" [keyboard]="true" [pagination]="true" [scrollbar]="true" [zoom]="true">
+        <ng-template swiperSlide>
+          <img src="../../../assets/panel1.png" alt="">
+        </ng-template>
+        <ng-template swiperSlide>
+          <img src="../../../assets/panel2.png" alt="">
+        </ng-template>
+        <ng-template swiperSlide>
+          <img src="../../../assets/panel3.png" alt="">
+        </ng-template>
+      </swiper>
+    </ion-slides>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../../assets/instalador.jpg" alt="">
+        <ion-card-subtitle>Servicio técnico</ion-card-subtitle>
+        <ion-card-title>Instalaciones</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../../assets/cotizar.png" alt="">
+        <ion-card-subtitle>Costos</ion-card-subtitle>
+        <ion-card-title>Cotiza ahora!</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <img src="../../../assets/empresas.jpg" alt="">
+        <ion-card-subtitle>Industriales</ion-card-subtitle>
+        <ion-card-title>Paneles a empresas</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+
+  </ion-content>
+  <ion-footer collapse="fade">
+    <ion-toolbar>
+      <ion-title class="text-center">&#169; Todos los derechos reservados</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</div>
